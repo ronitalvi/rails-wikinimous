@@ -1,0 +1,3 @@
+<h1><%= @article.title %><%= link_to  raw("<i class='far fa-trash-alt'></i>"), article_path(@article) , method: :delete, data:
+ { confirm: "Are you sure?" } %></h1>
+<p><%= @article.content  %> </p>
